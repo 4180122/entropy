@@ -857,3 +857,8 @@ if(BUILD_TESTING)
 endif()
 
 include(EntropyPackaging)
+
+option(ENTROPY_BUILD_ASCII_DEBUG "Build standalone ASCII debug tool" OFF)
+if(ENTROPY_BUILD_ASCII_DEBUG)
+    add_subdirectory(tools/ascii_debug)
+endif()
